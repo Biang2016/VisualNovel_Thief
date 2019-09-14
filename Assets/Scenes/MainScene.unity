@@ -2267,9 +2267,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1045733915}
-  selectedCommands:
-  - {fileID: 1045733997}
+  - {fileID: 1045733916}
+  selectedCommands: []
   variables:
   - {fileID: 1045733805}
   - {fileID: 1045733826}
@@ -5494,10 +5493,10 @@ MonoBehaviour:
   description: "Odd Adam\u2019s house"
   eventHandler: {fileID: 1045733996}
   commandList:
+  - {fileID: 1045733914}
   - {fileID: 1045733999}
   - {fileID: 1045734000}
   - {fileID: 1045733981}
-  - {fileID: 1045733914}
   - {fileID: 1045733912}
 --- !u!114 &1045733917
 MonoBehaviour:
