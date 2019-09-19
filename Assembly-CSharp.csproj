@@ -611,6 +611,7 @@
     <Compile Include="Assets\FungusExamples\FirstPerson\Scripts\SimpleMouseLook.cs" />
     <Compile Include="Assets\FungusExamples\FungusLua\Bindings\CustomScript.cs" />
     <Compile Include="Assets\FungusExamples\MonoBehEvents\SpriteColorChangeFromFungusMouseEvent.cs" />
+    <Compile Include="Assets\Scripts\Character\Thief.cs" />
     <Compile Include="Assets\Scripts\OnPointerHoverAndLeave.cs" />
     <None Include="Assets\Fungus\Thirdparty\ThirdPartyNotices.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -655,37 +656,37 @@
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Fungus\Docs\CHANGELOG.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/AssignmentProjects/VisualNovel_Thief/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/biang/WorkSpace/NYUGC/GameStudio1/VisualNovel_Thief/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
