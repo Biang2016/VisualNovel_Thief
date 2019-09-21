@@ -6,6 +6,7 @@ public class Thief : MonoBehaviour
     private Vector2 moveDirection = Vector2.zero;
     public Animator Animator;
     public Rigidbody2D Rigidbody2D;
+    public GameObject Umbrella;
 
     void Start()
     {
@@ -18,8 +19,20 @@ public class Thief : MonoBehaviour
         moveDirection = new Vector2(hor, ver);
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
-        Rigidbody2D.velocity= moveDirection;
+        Rigidbody2D.velocity = moveDirection;
         Animator.SetBool("LeftRun", hor < 0);
         Animator.SetBool("RightRun", hor > 0);
+    }
+
+    private bool flying;
+
+    public bool Flying
+    {
+        get { return flying; }
+        set
+        {
+            flying = value;
+            Umbrella.SetActive(value);
+        }
     }
 }
