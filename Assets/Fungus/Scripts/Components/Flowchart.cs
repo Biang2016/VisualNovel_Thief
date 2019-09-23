@@ -804,14 +804,14 @@ namespace Fungus
         /// Register a new variable with the Flowchart at runtime. 
         /// The variable should be added as a component on the Flowchart game object.
         /// </summary>
-        public void SetVariable<T>(string key, T newvariable) where T : Variable
+        public void SetVariable<T>(string key, T newvariable) where T:Variable
         {
             for (int i = 0; i < variables.Count; i++)
             {
                 var v = variables[i];
                 if (v != null && v.Key == key)
                 {
-                    T variable = v as T;
+                    T variable = (T) v;
                     if (variable != null)
                     {
                         variable = newvariable;

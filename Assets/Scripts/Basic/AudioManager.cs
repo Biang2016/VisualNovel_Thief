@@ -20,22 +20,45 @@ public class AudioManager : MonoSingleton<AudioManager>
     public AudioMixerGroup BGMAudioMixerGroup;
     public AudioMixerGroup SoundAudioMixerGroup;
 
+    void Awake()
+    {
+        Fungus.PlaySound.PlaySoundHookDelegate = delegate
+        {
+            foreach (People p in AllPeoples)
+            {
+                p.ByNoise(Thief.transform);
+            }
+        };
+    }
+
     void Start()
     {
-        float masterVolume = PlayerPrefs.GetFloat("MasterVolume");
-        AudioMixer.SetFloat("MasterVolume", masterVolume.Equals(0.0f) ? -8 : masterVolume);
-        float soundVolume = PlayerPrefs.GetFloat("SoundVolume");
-        AudioMixer.SetFloat("SoundVolume", soundVolume.Equals(0.0f) ? -8 : soundVolume);
-        float bgmVolume = PlayerPrefs.GetFloat("BGMVolume");
-        AudioMixer.SetFloat("BGMVolume", bgmVolume.Equals(0.0f) ? -8 : bgmVolume);
+        AudioMixer.SetFloat("MasterVolume", 0f);
+        AudioMixer.SetFloat("SoundVolume", 0f);
+        AudioMixer.SetFloat("BGMVolume", 0f);
     }
 
-    public void SoundPlay(string audioName)
+    public void SoundPlayIsNoise(string audioName)
+    {
+        SoundPlay(audioName, true);
+    }
+
+    public void SoundPlay(string audioName, bool isNoise)
     {
         SoundPlay(audioName, 1f);
+        if (isNoise)
+        {
+            foreach (People p in AllPeoples)
+            {
+                p.ByNoise(Thief.transform);
+            }
+        }
     }
 
-    internal void SoundPlay(string audioName, float volume = 1)
+    public List<People> AllPeoples = new List<People>();
+    public Thief Thief;
+
+    internal void SoundPlay(string audioName, float volume)
     {
         if (AudioDictionary.ContainsKey(audioName))
         {

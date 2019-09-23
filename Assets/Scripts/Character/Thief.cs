@@ -14,14 +14,30 @@ public class Thief : MonoBehaviour
 
     void Update()
     {
-        float hor = Input.GetAxis("Horizontal");
-        float ver = Input.GetAxis("Vertical");
-        moveDirection = new Vector2(hor, ver);
-        moveDirection = transform.TransformDirection(moveDirection);
-        moveDirection *= speed;
-        Rigidbody2D.velocity = moveDirection;
-        Animator.SetBool("LeftRun", hor < 0);
-        Animator.SetBool("RightRun", hor > 0);
+        if (CanMove)
+        {
+            float hor = Input.GetAxis("Horizontal");
+            float ver = Input.GetAxis("Vertical");
+            moveDirection = new Vector2(hor, ver);
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+            Rigidbody2D.velocity = moveDirection;
+            Animator.SetBool("LeftRun", hor < 0);
+            Animator.SetBool("RightRun", hor > 0);
+        }
+    }
+
+    public bool CanMove = false;
+
+    public void SetCanMove()
+    {
+        CanMove = true;
+    }
+
+    public void ForbidCanMove()
+    {
+        CanMove = false;
+        Rigidbody2D.velocity = Vector2.zero;
     }
 
     private bool flying;
