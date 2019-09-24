@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class GoodThing : MonoBehaviour
 {
-    [SerializeField] private string GoodName;
-    [SerializeField] private int Price;
-    [SerializeField] private Button Button;
+    public string GoodName;
+    public int Price;
+    public Button Button;
     [SerializeField] private string BlockName;
 
     void Awake()
@@ -25,6 +25,7 @@ public class GoodThing : MonoBehaviour
             AudioManager.Instance.SoundPlayIsNoise("Coins");
             GetThat();
             gameObject.SetActive(false);
+            Manager.Instance.GoodThingGet(this);
         }
         else
         {

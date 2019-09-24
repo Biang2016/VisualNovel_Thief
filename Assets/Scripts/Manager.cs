@@ -8,6 +8,10 @@ public class Manager : MonoSingleton<Manager>
     public Flowchart Flowchart;
 
     [SerializeField] private Text coinText;
+    [SerializeField] private Animator GoodThingJumpOutAnimator;
+    [SerializeField] private Image GoodThingJumpOutImage;
+    [SerializeField] private Text GoodThingJumpOutText;
+    [SerializeField] private Text GoodThingJumpOutNameText;
 
     private int totalGetCoins = 0;
 
@@ -84,5 +88,13 @@ public class Manager : MonoSingleton<Manager>
         evidenceMartin |= !martinGateLocked;
         Flowchart.SetBooleanVariable("EvidenceMartin", evidenceMartin);
         Flowchart.SetBooleanVariable("MartinSuspect", MartinSuspect() || MartinSonSuspect());
+    }
+
+    public void GoodThingGet(GoodThing gt)
+    {
+        GoodThingJumpOutAnimator.SetTrigger("JumpOut");
+        GoodThingJumpOutImage.sprite = gt.Button.image.sprite;
+        GoodThingJumpOutText.text = gt.Price.ToString();
+        GoodThingJumpOutNameText.text = gt.GoodName.ToString();
     }
 }
