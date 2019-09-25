@@ -1,5 +1,6 @@
 ﻿using Fungus;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Manager : MonoSingleton<Manager>
@@ -96,5 +97,10 @@ public class Manager : MonoSingleton<Manager>
         GoodThingJumpOutImage.sprite = gt.Button.image.sprite;
         GoodThingJumpOutText.text = gt.Price.ToString();
         GoodThingJumpOutNameText.text = gt.GoodName.ToString();
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
