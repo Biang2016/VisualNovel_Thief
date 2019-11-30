@@ -1,6 +1,6 @@
-
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{6A550020-569D-9C8E-7CAE-A1E2925904B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{63F1E862-62F8-288E-C1A2-B509146B7ED4}"
